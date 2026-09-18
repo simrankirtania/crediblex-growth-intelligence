@@ -1,0 +1,51 @@
+Partner_ID,Partner_Type,SME_Reach,Transaction_Volume,Industry_Focus,Financing_Relevance,Digital_Maturity,Growth_Rate,Integration_Complexity,Partner_Score,Partner_Segment
+PTN001,Logistics Aggregator,929,5936365,Professional Services,38.0,91.6,-0.185,Medium,32.6,Monitor
+PTN002,E-commerce Platform,50,313205,E-commerce,51.7,90.7,0.101,High,10.8,Monitor
+PTN003,POS / Payment Gateway,7247,14099909,Retail,41.2,37.3,-0.17,Low,46.5,Emerging
+PTN004,Accounting Software,624,5134482,Construction,64.6,83.6,0.588,High,41.7,Emerging
+PTN005,POS / Payment Gateway,1027,4614108,Retail,62.0,82.3,0.222,Low,53.8,Priority
+PTN006,Supplier Network,1051,7763177,Manufacturing,46.7,80.3,0.205,High,32.3,Monitor
+PTN007,Accounting Software,566,1842950,Manufacturing,37.9,49.4,0.226,High,19.4,Monitor
+PTN008,B2B Marketplace,1745,5803224,Construction,72.5,59.4,0.301,Medium,50.6,Priority
+PTN009,Supplier Network,1276,11114536,E-commerce,69.8,28.9,0.376,High,38.2,Emerging
+PTN010,Telecom Provider,609,2967420,Trading,63.5,61.5,-0.133,High,23.8,Monitor
+PTN011,POS / Payment Gateway,1579,2038653,Healthcare,8.0,29.0,0.442,Low,34.5,Emerging
+PTN012,Accounting Software,1292,9887411,Construction,49.5,65.3,0.429,Low,55.1,Priority
+PTN013,ERP / Invoicing Platform,3717,9899435,Construction,33.6,66.8,0.167,Low,50.1,Priority
+PTN014,B2B Marketplace,307,2457775,Retail,50.1,38.9,0.156,Medium,28.9,Monitor
+PTN015,Free Zone Authority,552,4589773,Manufacturing,26.9,61.4,-0.2,Medium,22.4,Monitor
+PTN016,Logistics Aggregator,2974,4153730,Retail,71.9,49.4,-0.069,Medium,43.7,Emerging
+PTN017,B2B Marketplace,663,3696835,Construction,16.8,73.9,0.284,Medium,29.8,Monitor
+PTN018,Bank / NBFC Referral,496,4388855,E-commerce,32.3,49.5,0.42,Medium,33.4,Monitor
+PTN019,Logistics Aggregator,700,5903479,E-commerce,26.7,23.0,0.326,Low,37.1,Emerging
+PTN020,Bank / NBFC Referral,1199,6123287,E-commerce,27.6,63.9,0.165,Low,41.7,Emerging
+PTN021,Telecom Provider,1204,7681573,Retail,83.4,40.9,0.565,High,45.8,Emerging
+PTN022,Bank / NBFC Referral,1063,6117510,Trading,55.7,76.2,0.381,Low,55.1,Priority
+PTN023,Bank / NBFC Referral,432,1065605,Professional Services,80.1,48.9,0.101,Low,45.0,Emerging
+PTN024,ERP / Invoicing Platform,3135,19294609,Retail,24.7,83.1,0.616,Low,58.9,Priority
+PTN025,Supplier Network,5761,20346456,Retail,55.1,60.4,-0.039,High,38.0,Emerging
+PTN026,ERP / Invoicing Platform,164,585705,Professional Services,68.2,74.8,-0.114,Low,34.8,Emerging
+PTN027,POS / Payment Gateway,243,1031268,Retail,18.6,49.9,0.096,Medium,16.0,Monitor
+PTN028,Accounting Software,4037,31439552,F&B,27.9,35.9,0.028,Low,45.9,Emerging
+PTN029,Logistics Aggregator,7531,20743656,Retail,43.9,55.5,0.107,Low,55.9,Priority
+PTN030,POS / Payment Gateway,129,368487,Healthcare,76.5,27.0,0.34,Medium,29.5,Monitor
+PTN031,Bank / NBFC Referral,3285,2825715,Hospitality,5.0,49.9,0.173,Medium,27.2,Monitor
+PTN032,Bank / NBFC Referral,8117,16810764,E-commerce,8.3,13.7,0.178,Medium,33.2,Monitor
+PTN033,Free Zone Authority,519,4580263,Hospitality,82.0,84.2,0.192,Low,56.7,Priority
+PTN034,Telecom Provider,7613,33175426,Trading,13.2,97.3,-0.2,High,29.5,Monitor
+PTN035,Telecom Provider,1101,2642786,Hospitality,23.3,50.0,-0.123,Medium,22.6,Monitor
+PTN036,Logistics Aggregator,1893,16504292,Professional Services,55.9,66.3,0.103,High,36.3,Emerging
+PTN037,Telecom Provider,607,620576,Trading,35.5,56.3,0.011,Low,30.6,Monitor
+PTN038,ERP / Invoicing Platform,4028,19214222,Healthcare,23.0,69.1,0.134,Medium,40.9,Emerging
+PTN039,B2B Marketplace,3354,24812012,Trading,24.5,93.0,0.461,Low,58.2,Priority
+PTN040,Logistics Aggregator,8930,63734898,Retail,53.4,72.4,0.165,Medium,58.0,Priority
+PTN041,E-commerce Platform,6533,15362882,Manufacturing,86.0,82.7,-0.084,Medium,58.9,Priority
+PTN042,ERP / Invoicing Platform,1326,8756739,Healthcare,5.0,82.2,0.021,Medium,27.9,Monitor
+PTN043,Supplier Network,40914,241505792,Retail,38.8,80.7,0.522,Low,79.5,Priority
+PTN044,Supplier Network,5919,37510271,Logistics,94.5,76.5,0.486,Low,81.4,Priority
+PTN045,B2B Marketplace,2427,7237458,E-commerce,72.1,28.1,0.299,Low,56.8,Priority
+PTN046,POS / Payment Gateway,447,3329266,F&B,47.6,64.1,-0.132,High,18.3,Monitor
+PTN047,Bank / NBFC Referral,249,1341051,E-commerce,42.0,56.9,0.241,Low,35.5,Emerging
+PTN048,Bank / NBFC Referral,273,1841560,E-commerce,51.0,30.9,0.257,Low,36.7,Emerging
+PTN049,Logistics Aggregator,480,4082161,Logistics,16.0,78.0,0.185,Low,35.2,Emerging
+PTN050,Free Zone Authority,6094,47625083,Healthcare,63.5,62.2,0.066,Low,63.5,Priority
