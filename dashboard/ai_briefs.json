@@ -1,0 +1,332 @@
+{
+  "sme_briefs": {
+    "SME0046": {
+      "business_profile": "SME0046 is a 2.1-year-old Professional Services business based in Dubai, generating approximately AED 424,660 in monthly revenue with variable revenue patterns and revenue that is currently growing (44.8% growth).",
+      "financing_opportunity": "The business scores 77.8/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 893,585.",
+      "recommended_product": "Receivables Financing. Receivable days of 133 exceed payable days of 15, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (133 days); strong revenue growth (44.8%); healthy transaction activity (814 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0130": {
+      "business_profile": "SME0130 is a 2.9-year-old Construction business based in Umm Al Quwain, generating approximately AED 349,780 in monthly revenue with variable revenue patterns and revenue that is currently growing (58.9% growth).",
+      "financing_opportunity": "The business scores 75.2/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 703,091.",
+      "recommended_product": "Revenue-Based Financing. Revenue growth of 58.9% combined with relatively stable revenue indicates the business could support financing repaid as a share of future revenue.",
+      "key_drivers": "Strong revenue growth (58.9%); healthy transaction activity (960 txns/mo); thin cash buffer (10 days).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Revenue-Based Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0746": {
+      "business_profile": "SME0746 is a 15.5-year-old F&B business based in Abu Dhabi, generating approximately AED 43,785 in monthly revenue with stable revenue patterns and revenue that is currently growing (64.5% growth).",
+      "financing_opportunity": "The business scores 73.8/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 79,339.",
+      "recommended_product": "Receivables Financing. Receivable days of 59 exceed payable days of 47, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (59 days); strong revenue growth (64.5%); healthy transaction activity (579 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0904": {
+      "business_profile": "SME0904 is a 9.0-year-old F&B business based in Dubai, generating approximately AED 108,095 in monthly revenue with variable revenue patterns and revenue that is currently growing (61.9% growth).",
+      "financing_opportunity": "The business scores 73.0/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 163,231.",
+      "recommended_product": "Receivables Financing. Receivable days of 137 exceed payable days of 16, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (137 days); strong revenue growth (61.9%); healthy transaction activity (175 txns/mo); thin cash buffer (7 days).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0806": {
+      "business_profile": "SME0806 is a 6.3-year-old Retail business based in Sharjah, generating approximately AED 190,205 in monthly revenue with stable revenue patterns and revenue that is currently growing (32.4% growth).",
+      "financing_opportunity": "The business scores 72.3/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 353,332.",
+      "recommended_product": "Receivables Financing. Receivable days of 118 exceed payable days of 31, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (118 days); strong revenue growth (32.4%); healthy transaction activity (779 txns/mo); thin cash buffer (12 days).",
+      "potential_concern": "Multiple early-warning indicators are flagged \u2014 this SME warrants closer review before any financing offer is extended.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0395": {
+      "business_profile": "SME0395 is a 3.6-year-old Retail business based in Ajman, generating approximately AED 79,678 in monthly revenue with variable revenue patterns and revenue that is currently growing (50.3% growth).",
+      "financing_opportunity": "The business scores 71.7/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 165,013.",
+      "recommended_product": "Receivables Financing. Receivable days of 58 exceed payable days of 44, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (58 days); strong revenue growth (50.3%); healthy transaction activity (304 txns/mo); thin cash buffer (6 days).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0285": {
+      "business_profile": "SME0285 is a 5.8-year-old Construction business based in Fujairah, generating approximately AED 263,032 in monthly revenue with stable revenue patterns and revenue that is currently growing (45.6% growth).",
+      "financing_opportunity": "The business scores 71.0/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 504,482.",
+      "recommended_product": "Receivables Financing. Receivable days of 55 exceed payable days of 33, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (55 days); strong revenue growth (45.6%); healthy transaction activity (674 txns/mo); thin cash buffer (6 days).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0743": {
+      "business_profile": "SME0743 is a 3.5-year-old Trading business based in Dubai, generating approximately AED 219,466 in monthly revenue with stable revenue patterns and revenue that is currently growing (27.1% growth).",
+      "financing_opportunity": "The business scores 69.9/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 355,919.",
+      "recommended_product": "Receivables Financing. Receivable days of 148 exceed payable days of 80, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (148 days); strong revenue growth (27.1%); healthy transaction activity (696 txns/mo); thin cash buffer (8 days).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0756": {
+      "business_profile": "SME0756 is a 9.9-year-old E-commerce business based in Abu Dhabi, generating approximately AED 92,655 in monthly revenue with variable revenue patterns and revenue that is currently growing (65.0% growth).",
+      "financing_opportunity": "The business scores 69.6/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 184,835.",
+      "recommended_product": "Payable Financing. Payable days of 49 suggest the SME could benefit from extending supplier payment terms through payable financing to smooth cash flow.",
+      "key_drivers": "Strong revenue growth (65.0%); healthy transaction activity (216 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Payable Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0594": {
+      "business_profile": "SME0594 is a 2.3-year-old Healthcare business based in Dubai, generating approximately AED 70,148 in monthly revenue with stable revenue patterns and revenue that is currently growing (62.8% growth).",
+      "financing_opportunity": "The business scores 69.4/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 133,695.",
+      "recommended_product": "Receivables Financing. Receivable days of 46 exceed payable days of 33, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (46 days); strong revenue growth (62.8%); healthy transaction activity (151 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0418": {
+      "business_profile": "SME0418 is a 4.0-year-old Professional Services business based in Abu Dhabi, generating approximately AED 71,059 in monthly revenue with stable revenue patterns and revenue that is currently growing (33.2% growth).",
+      "financing_opportunity": "The business scores 68.8/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 129,664.",
+      "recommended_product": "Receivables Financing. Receivable days of 150 exceed payable days of 39, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (150 days); strong revenue growth (33.2%); healthy transaction activity (257 txns/mo); thin cash buffer (18 days).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0461": {
+      "business_profile": "SME0461 is a 10.1-year-old Construction business based in Sharjah, generating approximately AED 148,683 in monthly revenue with variable revenue patterns and revenue that is currently growing (30.1% growth).",
+      "financing_opportunity": "The business scores 68.8/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 308,031.",
+      "recommended_product": "Receivables Financing. Receivable days of 128 exceed payable days of 15, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (128 days); strong revenue growth (30.1%); healthy transaction activity (350 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0955": {
+      "business_profile": "SME0955 is a 1.6-year-old Hospitality business based in Ras Al Khaimah, generating approximately AED 134,304 in monthly revenue with stable revenue patterns and revenue that is currently growing (65.0% growth).",
+      "financing_opportunity": "The business scores 68.4/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 189,987.",
+      "recommended_product": "Receivables Financing. Receivable days of 52 exceed payable days of 6, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (52 days); strong revenue growth (65.0%); healthy transaction activity (620 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0662": {
+      "business_profile": "SME0662 is a 9.4-year-old Trading business based in Abu Dhabi, generating approximately AED 63,458 in monthly revenue with stable revenue patterns and revenue that is currently growing (50.2% growth).",
+      "financing_opportunity": "The business scores 68.3/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 99,817.",
+      "recommended_product": "Receivables Financing. Receivable days of 94 exceed payable days of 13, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (94 days); strong revenue growth (50.2%); healthy transaction activity (169 txns/mo); thin cash buffer (19 days).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0982": {
+      "business_profile": "SME0982 is a 8.1-year-old Professional Services business based in Dubai, generating approximately AED 201,231 in monthly revenue with stable revenue patterns and revenue that is currently growing (65.0% growth).",
+      "financing_opportunity": "The business scores 67.9/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 265,824.",
+      "recommended_product": "Receivables Financing. Receivable days of 65 exceed payable days of 17, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (65 days); strong revenue growth (65.0%); healthy transaction activity (612 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0902": {
+      "business_profile": "SME0902 is a 4.6-year-old E-commerce business based in Dubai, generating approximately AED 136,094 in monthly revenue with variable revenue patterns and revenue that is currently growing (52.4% growth).",
+      "financing_opportunity": "The business scores 67.5/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 232,262.",
+      "recommended_product": "Receivables Financing. Receivable days of 59 exceed payable days of 18, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (59 days); strong revenue growth (52.4%); healthy transaction activity (556 txns/mo); thin cash buffer (8 days).",
+      "potential_concern": "Multiple early-warning indicators are flagged \u2014 this SME warrants closer review before any financing offer is extended.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0322": {
+      "business_profile": "SME0322 is a 2.3-year-old F&B business based in Abu Dhabi, generating approximately AED 131,828 in monthly revenue with stable revenue patterns and revenue that is currently growing (47.0% growth).",
+      "financing_opportunity": "The business scores 67.4/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 233,880.",
+      "recommended_product": "Receivables Financing. Receivable days of 51 exceed payable days of 20, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (51 days); strong revenue growth (47.0%); healthy transaction activity (331 txns/mo); thin cash buffer (8 days).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0359": {
+      "business_profile": "SME0359 is a 6.7-year-old F&B business based in Sharjah, generating approximately AED 225,435 in monthly revenue with stable revenue patterns and revenue that is currently growing (52.5% growth).",
+      "financing_opportunity": "The business scores 67.3/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 361,946.",
+      "recommended_product": "Revenue-Based Financing. Revenue growth of 52.5% combined with relatively stable revenue indicates the business could support financing repaid as a share of future revenue.",
+      "key_drivers": "Elevated receivable days (58 days); strong revenue growth (52.5%); healthy transaction activity (526 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Revenue-Based Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0728": {
+      "business_profile": "SME0728 is a 1.9-year-old Retail business based in Ras Al Khaimah, generating approximately AED 148,279 in monthly revenue with variable revenue patterns and revenue that is currently growing (56.4% growth).",
+      "financing_opportunity": "The business scores 67.2/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 260,732.",
+      "recommended_product": "Receivables Financing. Receivable days of 103 exceed payable days of 7, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (103 days); strong revenue growth (56.4%); healthy transaction activity (302 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    },
+    "SME0829": {
+      "business_profile": "SME0829 is a 4.0-year-old Trading business based in Fujairah, generating approximately AED 205,696 in monthly revenue with stable revenue patterns and revenue that is currently growing (58.0% growth).",
+      "financing_opportunity": "The business scores 66.7/100 on the Financing Opportunity Score, placing it in the 'High Opportunity' segment, with an estimated illustrative financing requirement of AED 263,208.",
+      "recommended_product": "Receivables Financing. Receivable days of 105 exceed payable days of 45, suggesting delayed customer payments are creating working-capital pressure that invoice/receivables financing could bridge.",
+      "key_drivers": "Elevated receivable days (105 days); strong revenue growth (58.0%); healthy transaction activity (292 txns/mo).",
+      "potential_concern": "One or two early-warning signals are present; not disqualifying, but worth monitoring.",
+      "suggested_next_action": "Prioritise outreach with a tailored Receivables Financing offer, paired with a light-touch financial review given the flagged concerns."
+    }
+  },
+  "partner_briefs": {
+    "PTN044": {
+      "partner_profile": "PTN044 is a Supplier Network with a primary focus on the Logistics sector, reaching an estimated 5,919 SMEs and processing roughly AED 37,510,271 in transaction volume per month.",
+      "sme_exposure": "With 5,919 SMEs in its network and a digital maturity score of 76.5/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 94.5/100, and the partner's overall Partner Opportunity Score is 81.4/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 48.6% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Logistics SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN043": {
+      "partner_profile": "PTN043 is a Supplier Network with a primary focus on the Retail sector, reaching an estimated 40,914 SMEs and processing roughly AED 241,505,792 in transaction volume per month.",
+      "sme_exposure": "With 40,914 SMEs in its network and a digital maturity score of 80.7/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 38.8/100, and the partner's overall Partner Opportunity Score is 79.5/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 52.2% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Retail SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN050": {
+      "partner_profile": "PTN050 is a Free Zone Authority with a primary focus on the Healthcare sector, reaching an estimated 6,094 SMEs and processing roughly AED 47,625,083 in transaction volume per month.",
+      "sme_exposure": "With 6,094 SMEs in its network and a digital maturity score of 62.2/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 63.5/100, and the partner's overall Partner Opportunity Score is 63.5/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 6.6% and low integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Healthcare SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN024": {
+      "partner_profile": "PTN024 is a ERP / Invoicing Platform with a primary focus on the Retail sector, reaching an estimated 3,135 SMEs and processing roughly AED 19,294,609 in transaction volume per month.",
+      "sme_exposure": "With 3,135 SMEs in its network and a digital maturity score of 83.1/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 24.7/100, and the partner's overall Partner Opportunity Score is 58.9/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 61.6% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Retail SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN041": {
+      "partner_profile": "PTN041 is a E-commerce Platform with a primary focus on the Manufacturing sector, reaching an estimated 6,533 SMEs and processing roughly AED 15,362,882 in transaction volume per month.",
+      "sme_exposure": "With 6,533 SMEs in its network and a digital maturity score of 82.7/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 86.0/100, and the partner's overall Partner Opportunity Score is 58.9/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of -8.4% and medium integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Manufacturing SMEs in the partner's network, emphasising a phased integration roadmap."
+    },
+    "PTN039": {
+      "partner_profile": "PTN039 is a B2B Marketplace with a primary focus on the Trading sector, reaching an estimated 3,354 SMEs and processing roughly AED 24,812,012 in transaction volume per month.",
+      "sme_exposure": "With 3,354 SMEs in its network and a digital maturity score of 93.0/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 24.5/100, and the partner's overall Partner Opportunity Score is 58.2/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 46.1% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Trading SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN040": {
+      "partner_profile": "PTN040 is a Logistics Aggregator with a primary focus on the Retail sector, reaching an estimated 8,930 SMEs and processing roughly AED 63,734,898 in transaction volume per month.",
+      "sme_exposure": "With 8,930 SMEs in its network and a digital maturity score of 72.4/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 53.4/100, and the partner's overall Partner Opportunity Score is 58.0/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 16.5% and medium integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Retail SMEs in the partner's network, emphasising a phased integration roadmap."
+    },
+    "PTN045": {
+      "partner_profile": "PTN045 is a B2B Marketplace with a primary focus on the E-commerce sector, reaching an estimated 2,427 SMEs and processing roughly AED 7,237,458 in transaction volume per month.",
+      "sme_exposure": "With 2,427 SMEs in its network and a digital maturity score of 28.1/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 72.1/100, and the partner's overall Partner Opportunity Score is 56.8/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 29.9% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to E-commerce SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN033": {
+      "partner_profile": "PTN033 is a Free Zone Authority with a primary focus on the Hospitality sector, reaching an estimated 519 SMEs and processing roughly AED 4,580,263 in transaction volume per month.",
+      "sme_exposure": "With 519 SMEs in its network and a digital maturity score of 84.2/100, this partner offers moderate reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 82.0/100, and the partner's overall Partner Opportunity Score is 56.7/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 19.2% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Hospitality SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN029": {
+      "partner_profile": "PTN029 is a Logistics Aggregator with a primary focus on the Retail sector, reaching an estimated 7,531 SMEs and processing roughly AED 20,743,656 in transaction volume per month.",
+      "sme_exposure": "With 7,531 SMEs in its network and a digital maturity score of 55.5/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 43.9/100, and the partner's overall Partner Opportunity Score is 55.9/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 10.7% and low integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Retail SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN012": {
+      "partner_profile": "PTN012 is a Accounting Software with a primary focus on the Construction sector, reaching an estimated 1,292 SMEs and processing roughly AED 9,887,411 in transaction volume per month.",
+      "sme_exposure": "With 1,292 SMEs in its network and a digital maturity score of 65.3/100, this partner offers moderate reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 49.5/100, and the partner's overall Partner Opportunity Score is 55.1/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 42.9% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Construction SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN022": {
+      "partner_profile": "PTN022 is a Bank / NBFC Referral with a primary focus on the Trading sector, reaching an estimated 1,063 SMEs and processing roughly AED 6,117,510 in transaction volume per month.",
+      "sme_exposure": "With 1,063 SMEs in its network and a digital maturity score of 76.2/100, this partner offers moderate reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 55.7/100, and the partner's overall Partner Opportunity Score is 55.1/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 38.1% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Trading SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN005": {
+      "partner_profile": "PTN005 is a POS / Payment Gateway with a primary focus on the Retail sector, reaching an estimated 1,027 SMEs and processing roughly AED 4,614,108 in transaction volume per month.",
+      "sme_exposure": "With 1,027 SMEs in its network and a digital maturity score of 82.3/100, this partner offers moderate reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 62.0/100, and the partner's overall Partner Opportunity Score is 53.8/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 22.2% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Retail SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN008": {
+      "partner_profile": "PTN008 is a B2B Marketplace with a primary focus on the Construction sector, reaching an estimated 1,745 SMEs and processing roughly AED 5,803,224 in transaction volume per month.",
+      "sme_exposure": "With 1,745 SMEs in its network and a digital maturity score of 59.4/100, this partner offers moderate reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 72.5/100, and the partner's overall Partner Opportunity Score is 50.6/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 30.1% and medium integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Construction SMEs in the partner's network, emphasising a phased integration roadmap."
+    },
+    "PTN013": {
+      "partner_profile": "PTN013 is a ERP / Invoicing Platform with a primary focus on the Construction sector, reaching an estimated 3,717 SMEs and processing roughly AED 9,899,435 in transaction volume per month.",
+      "sme_exposure": "With 3,717 SMEs in its network and a digital maturity score of 66.8/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 33.6/100, and the partner's overall Partner Opportunity Score is 50.1/100 ('Priority').",
+      "potential_fit": "Strong candidate for an embedded-finance integration at the point of transaction or invoicing.",
+      "why_it_matters": "Growth rate of 16.7% and low integration complexity mean this partnership could scale quickly if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Construction SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN003": {
+      "partner_profile": "PTN003 is a POS / Payment Gateway with a primary focus on the Retail sector, reaching an estimated 7,247 SMEs and processing roughly AED 14,099,909 in transaction volume per month.",
+      "sme_exposure": "With 7,247 SMEs in its network and a digital maturity score of 37.3/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 41.2/100, and the partner's overall Partner Opportunity Score is 46.5/100 ('Emerging').",
+      "potential_fit": "Reasonable candidate worth developing further as digital integration matures.",
+      "why_it_matters": "Growth rate of -17.0% and low integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Retail SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN028": {
+      "partner_profile": "PTN028 is a Accounting Software with a primary focus on the F&B sector, reaching an estimated 4,037 SMEs and processing roughly AED 31,439,552 in transaction volume per month.",
+      "sme_exposure": "With 4,037 SMEs in its network and a digital maturity score of 35.9/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 27.9/100, and the partner's overall Partner Opportunity Score is 45.9/100 ('Emerging').",
+      "potential_fit": "Reasonable candidate worth developing further as digital integration matures.",
+      "why_it_matters": "Growth rate of 2.8% and low integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to F&B SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN021": {
+      "partner_profile": "PTN021 is a Telecom Provider with a primary focus on the Retail sector, reaching an estimated 1,204 SMEs and processing roughly AED 7,681,573 in transaction volume per month.",
+      "sme_exposure": "With 1,204 SMEs in its network and a digital maturity score of 40.9/100, this partner offers moderate reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 83.4/100, and the partner's overall Partner Opportunity Score is 45.8/100 ('Emerging').",
+      "potential_fit": "Reasonable candidate worth developing further as digital integration matures.",
+      "why_it_matters": "Growth rate of 56.5% and high integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Retail SMEs in the partner's network, emphasising a phased integration roadmap."
+    },
+    "PTN023": {
+      "partner_profile": "PTN023 is a Bank / NBFC Referral with a primary focus on the Professional Services sector, reaching an estimated 432 SMEs and processing roughly AED 1,065,605 in transaction volume per month.",
+      "sme_exposure": "With 432 SMEs in its network and a digital maturity score of 48.9/100, this partner offers moderate reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 80.1/100, and the partner's overall Partner Opportunity Score is 45.0/100 ('Emerging').",
+      "potential_fit": "Reasonable candidate worth developing further as digital integration matures.",
+      "why_it_matters": "Growth rate of 10.1% and low integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Professional Services SMEs in the partner's network, emphasising quick technical integration."
+    },
+    "PTN016": {
+      "partner_profile": "PTN016 is a Logistics Aggregator with a primary focus on the Retail sector, reaching an estimated 2,974 SMEs and processing roughly AED 4,153,730 in transaction volume per month.",
+      "sme_exposure": "With 2,974 SMEs in its network and a digital maturity score of 49.4/100, this partner offers substantial reach into CredibleX's target segment.",
+      "financing_opportunity": "Financing relevance is scored at 71.9/100, and the partner's overall Partner Opportunity Score is 43.7/100 ('Emerging').",
+      "potential_fit": "Reasonable candidate worth developing further as digital integration matures.",
+      "why_it_matters": "Growth rate of -6.9% and medium integration complexity mean this partnership could scale steadily if pursued.",
+      "suggested_bd_angle": "Approach with an embedded-financing pilot tailored to Retail SMEs in the partner's network, emphasising a phased integration roadmap."
+    }
+  },
+  "executive_summary": {
+    "portfolio_insight": "5.9% of analysed SMEs fall into the High-Opportunity segment, with F&B the most represented industry among them \u2014 indicating where embedded-finance demand is currently concentrated.",
+    "product_insight": "Revenue-Based Financing is the most frequently recommended product across the portfolio, suggesting working-capital timing mismatches are the dominant financing need among the SMEs analysed.",
+    "partner_insight": "15 partners are classified as Priority, led by B2B Marketplace players \u2014 these represent the strongest near-term candidates for embedded-finance distribution.",
+    "early_warning_insight": "11.7% of SMEs are flagged as 'Attention Required' on the early-warning framework and should be reviewed before financing outreach, even where their opportunity score looks attractive."
+  }
+}

@@ -1,1 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CredibleX Growth Intelligence Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">CredibleX</div>
+      <div class="sub">Growth Intelligence Engine</div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item active" data-page="overview"><span class="n">01</span> Executive Overview</button>
+      <button class="nav-item" data-page="sme"><span class="n">02</span> SME Intelligence</button>
+      <button class="nav-item" data-page="partner"><span class="n">03</span> Partner Intelligence</button>
+      <button class="nav-item" data-page="ai"><span class="n">04</span> AI Insights</button>
+    </nav>
+
+    <div class="sidebar-foot">
+      <b>Independent prototype.</b><br>
+      Built on synthetic data to demonstrate how AI &amp; analytics could
+      support SME financing and embedded-finance partner discovery.
+      Not affiliated with or endorsed by CredibleX.
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- ============================================================ PAGE 1 -->
+    <section class="page active" id="page-overview">
+      <div class="page-head">
+        <div>
+          <h1>Executive Overview</h1>
+          <p>Portfolio-level view of financing opportunity across the simulated SME base and potential embedded-finance partners.</p>
+        </div>
+        <span class="badge-synth">Synthetic / illustrative data</span>
+      </div>
+
+      <div class="kpi-row" id="kpi-row"></div>
+
+      <div class="panel-row cols-3">
+        <div class="panel">
+          <h3>Opportunity score by industry</h3>
+          <canvas id="chart-industry" height="220"></canvas>
+        </div>
+        <div class="panel">
+          <h3>Financing product distribution</h3>
+          <canvas id="chart-product" height="220"></canvas>
+        </div>
+        <div class="panel">
+          <h3>SME opportunity segments</h3>
+          <canvas id="chart-segments" height="220"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ PAGE 2 -->
+    <section class="page" id="page-sme">
+      <div class="page-head">
+        <div>
+          <h1>SME Intelligence</h1>
+          <p>Filter and explore individual SME financing-opportunity profiles. Click any row for its AI Financing Brief.</p>
+        </div>
+        <span class="badge-synth">Synthetic / illustrative data</span>
+      </div>
+
+      <div class="filters">
+        <input type="search" id="f-search" placeholder="Search SME ID…">
+        <select id="f-industry"><option value="">All industries</option></select>
+        <select id="f-emirate"><option value="">All emirates</option></select>
+        <select id="f-segment"><option value="">All segments</option></select>
+        <select id="f-product"><option value="">All products</option></select>
+        <span class="filter-count" id="sme-count"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort="SME_ID">SME</th>
+              <th data-sort="Industry">Industry</th>
+              <th data-sort="Emirate">Emirate</th>
+              <th data-sort="Monthly_Revenue">Revenue (AED)</th>
+              <th data-sort="Revenue_Growth">Growth</th>
+              <th data-sort="Opportunity_Score">Opportunity</th>
+              <th data-sort="Recommended_Product">Product</th>
+              <th data-sort="Early_Warning_Status">Status</th>
+            </tr>
+          </thead>
+          <tbody id="sme-tbody"></tbody>
+        </table>
+        <div class="pagination">
+          <span id="sme-page-info"></span>
+          <div class="btns">
+            <button id="sme-prev">← Prev</button>
+            <button id="sme-next">Next →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ PAGE 3 -->
+    <section class="page" id="page-partner">
+      <div class="page-head">
+        <div>
+          <h1>Partner Intelligence</h1>
+          <p>Potential embedded-finance distribution partners, scored and prioritised. Click a partner for its AI Partner Brief.</p>
+        </div>
+        <span class="badge-synth">Synthetic / illustrative data</span>
+      </div>
+
+      <div class="panel-row cols-2">
+        <div class="panel">
+          <h3>SME reach vs. financing relevance <span style="font-weight:400;color:var(--text-400);font-size:12px;">(bubble size = Partner Score)</span></h3>
+          <div style="position:relative;">
+            <canvas id="chart-scatter" height="280"></canvas>
+            <div id="scatter-tooltip"></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Partners by segment</h3>
+          <canvas id="chart-partner-segments" height="280"></canvas>
+        </div>
+      </div>
+
+      <div class="filters">
+        <select id="pf-type"><option value="">All partner types</option></select>
+        <select id="pf-segment"><option value="">All segments</option></select>
+        <span class="filter-count" id="partner-count"></span>
+      </div>
+
+      <div class="partner-grid" id="partner-grid"></div>
+    </section>
+
+    <!-- ============================================================ PAGE 4 -->
+    <section class="page" id="page-ai">
+      <div class="page-head">
+        <div>
+          <h1>AI Insights</h1>
+          <p>Executive-level narrative generated from the calculated analytical outputs above — the AI explains the numbers, it does not invent them.</p>
+        </div>
+        <span class="badge-synth">Synthetic / illustrative data</span>
+      </div>
+
+      <div class="insight-grid">
+        <div class="insight-card">
+          <div class="tag">Portfolio Insight</div>
+          <p id="insight-portfolio">—</p>
+        </div>
+        <div class="insight-card amber">
+          <div class="tag">Product Insight</div>
+          <p id="insight-product">—</p>
+        </div>
+        <div class="insight-card slate">
+          <div class="tag">Partner Insight</div>
+          <p id="insight-partner">—</p>
+        </div>
+        <div class="insight-card rust">
+          <div class="tag">Early Warning Insight</div>
+          <p id="insight-warning">—</p>
+        </div>
+      </div>
+
+      <div class="methodology">
+        <b>How this works:</b> every score on this dashboard (SME Opportunity Score,
+        Recommended Product, Partner Score, Early Warning Status) is computed
+        deterministically in <code>python/opportunity_engine.ipynb</code> and
+        mirrored in <code>sql/analysis.sql</code>. The AI layer
+        (<code>python/ai_insights.ipynb</code>) is prompted — see
+        <code>ai/prompts.md</code> — to explain those pre-computed results in
+        business language, not to generate its own figures. This dashboard
+        reproduces the same template-based explanation logic client-side so
+        every SME and partner record has a brief on click.
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ================================================================ MODAL -->
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <div class="eyebrow" id="modal-eyebrow">AI FINANCING BRIEF</div>
+        <h2 id="modal-title">—</h2>
+      </div>
+      <button class="modal-close" id="modal-close">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
