@@ -23,9 +23,13 @@ const SEGMENT_COLORS = {
 };
 const PARTNER_SEG_COLORS = { Priority: CHART_COLORS.emerald, Emerging: CHART_COLORS.amber, Monitor: CHART_COLORS.slate };
 
-Chart.defaults.font.family = "'IBM Plex Sans', sans-serif";
-Chart.defaults.font.size = 11.5;
-Chart.defaults.color = '#4A5654';
+if (typeof Chart !== 'undefined') {
+  Chart.defaults.font.family = "'IBM Plex Sans', sans-serif";
+  Chart.defaults.font.size = 11.5;
+  Chart.defaults.color = '#4A5654';
+} else {
+  console.error('Chart.js failed to load — charts will be skipped, but KPIs, tables and briefs will still render.');
+}
 
 /* ---------------------------------------------------------------- nav */
 document.querySelectorAll('.nav-item').forEach(btn => {
@@ -77,6 +81,7 @@ function renderKPIs() {
 
 /* ---------------------------------------------------------------- charts: overview */
 function renderOverviewCharts() {
+  if (typeof Chart === 'undefined') return;
   // Opportunity by industry
   const industries = [...new Set(SME_DATA.map(d => d.Industry))];
   const avgByIndustry = industries.map(ind => {
@@ -285,6 +290,7 @@ function renderPartnerGrid() {
 
 /* ---------------------------------------------------------------- scatter + partner segment donut */
 function renderPartnerCharts() {
+  if (typeof Chart === 'undefined') return;
   const segColors = PARTNER_DATA.map(d => PARTNER_SEG_COLORS[d.Partner_Segment]);
   new Chart(document.getElementById('chart-scatter'), {
     type: 'bubble',
@@ -471,14 +477,18 @@ function renderExecutiveSummary() {
 }
 
 /* ---------------------------------------------------------------- init */
+function safeCall(fn, label) {
+  try { fn(); } catch (e) { console.error(`Dashboard init step failed (${label}):`, e); }
+}
+
 function init() {
-  renderKPIs();
-  renderOverviewCharts();
-  populateSMEFilters();
-  applySMEFilters();
-  populatePartnerFilters();
-  applyPartnerFilters();
-  renderPartnerCharts();
-  renderExecutiveSummary();
+  safeCall(renderKPIs, 'renderKPIs');
+  safeCall(renderOverviewCharts, 'renderOverviewCharts');
+  safeCall(populateSMEFilters, 'populateSMEFilters');
+  safeCall(applySMEFilters, 'applySMEFilters');
+  safeCall(populatePartnerFilters, 'populatePartnerFilters');
+  safeCall(applyPartnerFilters, 'applyPartnerFilters');
+  safeCall(renderPartnerCharts, 'renderPartnerCharts');
+  safeCall(renderExecutiveSummary, 'renderExecutiveSummary');
 }
 init();
