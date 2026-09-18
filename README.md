@@ -4,7 +4,7 @@
 
 This project shows how an embedded-finance lender like [CredibleX](https://crediblex.com) could use data and AI to identify SME financing opportunities, match SMEs to the right financing product, and prioritise potential ecosystem partners — all wrapped in an interactive dashboard that explains its own results in plain business language.
 
-**[→ View the live dashboard](https://growthintelligencedashboard.netlify.app/)** *(replace with your GitHub Pages link once deployed — see below)*
+**[→ View the live dashboard](https://growthintelligencedashboard.netlify.app/)** 
 
 > Independent portfolio project. Not affiliated with, commissioned by, or endorsed by CredibleX. All data is synthetically generated for demonstration purposes only.
 
