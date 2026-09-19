@@ -57,6 +57,26 @@ function pillHTML(text, cls) {
   return `<span class="pill ${cls}">${text}</span>`;
 }
 
+/* ---------------------------------------------------------------- score ring */
+function scoreRingHTML(score, colorVar, size) {
+  const pct = Math.max(0, Math.min(100, score));
+  const cls = size === 'lg' ? 'score-ring lg' : 'score-ring';
+  return `<div class="${cls}" style="--pct:${pct};--ring-color:${colorVar}"><div class="inner">${score}</div></div>`;
+}
+
+/* ---------------------------------------------------------------- animated count-up */
+function animateValue(el, end, opts = {}) {
+  const { duration = 900, formatter = (n) => Math.round(n).toLocaleString(), start = 0 } = opts;
+  const startTime = performance.now();
+  function tick(now) {
+    const t = Math.min(1, (now - startTime) / duration);
+    const eased = 1 - Math.pow(1 - t, 3);
+    el.textContent = formatter(start + (end - start) * eased);
+    if (t < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
 /* ---------------------------------------------------------------- KPIs */
 function renderKPIs() {
   const high = SME_DATA.filter(d => d.Opportunity_Segment === 'High Opportunity').length;
@@ -64,22 +84,70 @@ function renderKPIs() {
   const priority = PARTNER_DATA.filter(d => d.Partner_Segment === 'Priority').length;
 
   const kpis = [
-    { label: 'SMEs Analysed', value: SME_DATA.length.toLocaleString(), cls: '' },
-    { label: 'High-Opportunity SMEs', value: high.toLocaleString(), cls: 'emerald' },
-    { label: 'Total Illustrative Financing Requirement', value: fmtAEDShort(totalFin), cls: '' },
-    { label: 'Potential Partners', value: PARTNER_DATA.length.toLocaleString(), cls: '' },
-    { label: 'Priority Partners', value: priority.toLocaleString(), cls: 'amber' },
+    { id: 'k-smes', label: 'SMEs Analysed', value: SME_DATA.length, cls: '', fmt: n => Math.round(n).toLocaleString() },
+    { id: 'k-high', label: 'High-Opportunity SMEs', value: high, cls: 'emerald', bar: high / SME_DATA.length, barColor: 'var(--emerald)', fmt: n => Math.round(n).toLocaleString() },
+    { id: 'k-fin', label: 'Total Illustrative Financing Requirement', value: totalFin, cls: '', fmt: fmtAEDShort },
+    { id: 'k-partners', label: 'Potential Partners', value: PARTNER_DATA.length, cls: '', fmt: n => Math.round(n).toLocaleString() },
+    { id: 'k-priority', label: 'Priority Partners', value: priority, cls: 'amber', bar: priority / PARTNER_DATA.length, barColor: 'var(--amber)', fmt: n => Math.round(n).toLocaleString() },
   ];
 
   document.getElementById('kpi-row').innerHTML = kpis.map(k => `
     <div class="kpi">
       <div class="label">${k.label}</div>
-      <div class="value ${k.cls}">${k.value}</div>
+      <div class="value ${k.cls}" id="${k.id}">0</div>
+      ${k.bar !== undefined ? `<div class="kpi-bar-track"><div class="kpi-bar-fill" id="${k.id}-bar" style="background:${k.barColor}"></div></div>` : ''}
     </div>
   `).join('');
+
+  kpis.forEach(k => {
+    const el = document.getElementById(k.id);
+    animateValue(el, k.value, { formatter: k.fmt });
+    if (k.bar !== undefined) {
+      requestAnimationFrame(() => {
+        setTimeout(() => { document.getElementById(k.id + '-bar').style.width = (k.bar * 100) + '%'; }, 50);
+      });
+    }
+  });
 }
 
-/* ---------------------------------------------------------------- charts: overview */
+/* ---------------------------------------------------------------- spotlights */
+function renderSpotlights() {
+  const topSME = [...SME_DATA].sort((a,b) => b.Opportunity_Score - a.Opportunity_Score)[0];
+  const topPartner = [...PARTNER_DATA].sort((a,b) => b.Partner_Score - a.Partner_Score)[0];
+
+  const smeBrief = generateSMEBrief(topSME);
+  const partnerBrief = generatePartnerBrief(topPartner);
+
+  document.getElementById('spotlight-row').innerHTML = `
+    <div class="spotlight" id="spotlight-sme">
+      <div class="tag">TOP-RANKED SME OPPORTUNITY</div>
+      <div class="spotlight-top">
+        ${scoreRingHTML(topSME.Opportunity_Score, 'var(--emerald)')}
+        <div>
+          <div class="id">${topSME.SME_ID}</div>
+          <div class="sub">${topSME.Industry} · ${topSME.Emirate} · ${topSME.Recommended_Product}</div>
+        </div>
+      </div>
+      <p class="teaser">${smeBrief.financing_opportunity}</p>
+      <div class="cta">View full AI Financing Brief →</div>
+    </div>
+    <div class="spotlight" id="spotlight-partner">
+      <div class="tag">TOP-RANKED PARTNER OPPORTUNITY</div>
+      <div class="spotlight-top">
+        ${scoreRingHTML(topPartner.Partner_Score, 'var(--amber)')}
+        <div>
+          <div class="id">${topPartner.Partner_ID}</div>
+          <div class="sub">${topPartner.Partner_Type} · ${topPartner.Industry_Focus} focus</div>
+        </div>
+      </div>
+      <p class="teaser">${partnerBrief.financing_opportunity}</p>
+      <div class="cta">View full AI Partner Brief →</div>
+    </div>
+  `;
+
+  document.getElementById('spotlight-sme').addEventListener('click', () => openSMEBrief(topSME.SME_ID));
+  document.getElementById('spotlight-partner').addEventListener('click', () => openPartnerBrief(topPartner.Partner_ID));
+}
 function renderOverviewCharts() {
   if (typeof Chart === 'undefined') return;
   // Opportunity by industry
@@ -273,12 +341,16 @@ function renderPartnerGrid() {
         <span class="pid">${d.Partner_ID}</span>
         ${pillHTML(d.Partner_Segment, segClass(d.Partner_Segment))}
       </div>
-      <div class="ptype">${d.Partner_Type}</div>
-      <div style="font-size:12px;color:var(--text-600);">${d.Industry_Focus} focus</div>
-      <div class="metrics">
-        <div>Score<b>${d.Partner_Score}</b></div>
-        <div>Reach<b>${d.SME_Reach.toLocaleString()}</b></div>
-        <div>Relevance<b>${d.Financing_Relevance}</b></div>
+      <div class="card-body">
+        ${scoreRingHTML(d.Partner_Score, `var(--${d.Partner_Segment === 'Priority' ? 'emerald' : d.Partner_Segment === 'Emerging' ? 'amber' : 'slate'})`)}
+        <div>
+          <div class="ptype">${d.Partner_Type}</div>
+          <div style="font-size:12px;color:var(--text-600);margin-bottom:4px;">${d.Industry_Focus} focus</div>
+          <div class="metrics">
+            <div>Reach<b>${d.SME_Reach.toLocaleString()}</b></div>
+            <div>Relevance<b>${d.Financing_Relevance}</b></div>
+          </div>
+        </div>
       </div>
     </div>
   `).join('');
@@ -291,6 +363,36 @@ function renderPartnerGrid() {
 /* ---------------------------------------------------------------- scatter + partner segment donut */
 function renderPartnerCharts() {
   if (typeof Chart === 'undefined') return;
+
+  const reachValues = PARTNER_DATA.map(d => d.SME_Reach).sort((a,b)=>a-b);
+  const relevanceValues = PARTNER_DATA.map(d => d.Financing_Relevance).sort((a,b)=>a-b);
+  const medianReach = reachValues[Math.floor(reachValues.length/2)];
+  const medianRelevance = relevanceValues[Math.floor(relevanceValues.length/2)];
+
+  const quadrantPlugin = {
+    id: 'quadrantBg',
+    beforeDatasetsDraw(chart) {
+      const { ctx, chartArea, scales } = chart;
+      if (!chartArea) return;
+      const xMid = scales.x.getPixelForValue(medianReach);
+      const yMid = scales.y.getPixelForValue(medianRelevance);
+      ctx.save();
+      ctx.fillStyle = 'rgba(31,138,99,0.06)';
+      ctx.fillRect(xMid, chartArea.top, chartArea.right - xMid, yMid - chartArea.top);
+      ctx.fillStyle = 'rgba(201,138,44,0.06)';
+      ctx.fillRect(chartArea.left, chartArea.top, xMid - chartArea.left, yMid - chartArea.top);
+      ctx.fillStyle = 'rgba(91,107,120,0.05)';
+      ctx.fillRect(xMid, yMid, chartArea.right - xMid, chartArea.bottom - yMid);
+      ctx.fillStyle = 'rgba(199,194,175,0.10)';
+      ctx.fillRect(chartArea.left, yMid, xMid - chartArea.left, chartArea.bottom - yMid);
+      ctx.strokeStyle = 'rgba(90,100,95,0.15)';
+      ctx.setLineDash([3,3]);
+      ctx.beginPath(); ctx.moveTo(xMid, chartArea.top); ctx.lineTo(xMid, chartArea.bottom); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(chartArea.left, yMid); ctx.lineTo(chartArea.right, yMid); ctx.stroke();
+      ctx.restore();
+    }
+  };
+
   const segColors = PARTNER_DATA.map(d => PARTNER_SEG_COLORS[d.Partner_Segment]);
   new Chart(document.getElementById('chart-scatter'), {
     type: 'bubble',
@@ -302,6 +404,7 @@ function renderPartnerCharts() {
         borderWidth: 1,
       }]
     },
+    plugins: [quadrantPlugin],
     options: {
       plugins: {
         legend: { display: false },
@@ -400,13 +503,16 @@ function closeModal() { modalBackdrop.classList.remove('open'); }
 function openSMEBrief(smeId) {
   const row = SME_DATA.find(d => d.SME_ID === smeId);
   const brief = generateSMEBrief(row);
+  const ringColor = row.Opportunity_Segment === 'High Opportunity' ? 'var(--emerald)' : row.Opportunity_Segment === 'Emerging Opportunity' ? 'var(--amber)' : 'var(--slate)';
 
   document.getElementById('modal-eyebrow').textContent = 'AI FINANCING BRIEF';
   document.getElementById('modal-title').textContent = row.SME_ID;
   document.getElementById('modal-body').innerHTML = `
     <div class="brief-stats">
-      <div>Opportunity Score<b>${row.Opportunity_Score}</b></div>
-      <div>Segment<b>${row.Opportunity_Segment.replace(' Opportunity','')}</b></div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        ${scoreRingHTML(row.Opportunity_Score, ringColor)}
+        <div><div style="font-size:12px;color:var(--text-600);">Opportunity Score</div><div style="font-size:12px;color:var(--text-600);">${row.Opportunity_Segment}</div></div>
+      </div>
       <div>Product<b>${row.Recommended_Product}</b></div>
       <div>Status<b>${row.Early_Warning_Status}</b></div>
     </div>
@@ -423,13 +529,16 @@ function openSMEBrief(smeId) {
 function openPartnerBrief(partnerId) {
   const row = PARTNER_DATA.find(d => d.Partner_ID === partnerId);
   const brief = generatePartnerBrief(row);
+  const ringColor = row.Partner_Segment === 'Priority' ? 'var(--emerald)' : row.Partner_Segment === 'Emerging' ? 'var(--amber)' : 'var(--slate)';
 
   document.getElementById('modal-eyebrow').textContent = 'AI PARTNER BRIEF';
   document.getElementById('modal-title').textContent = row.Partner_ID;
   document.getElementById('modal-body').innerHTML = `
     <div class="brief-stats">
-      <div>Partner Score<b>${row.Partner_Score}</b></div>
-      <div>Segment<b>${row.Partner_Segment}</b></div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        ${scoreRingHTML(row.Partner_Score, ringColor)}
+        <div><div style="font-size:12px;color:var(--text-600);">Partner Score</div><div style="font-size:12px;color:var(--text-600);">${row.Partner_Segment}</div></div>
+      </div>
       <div>SME Reach<b>${row.SME_Reach.toLocaleString()}</b></div>
       <div>Type<b>${row.Partner_Type}</b></div>
     </div>
@@ -483,6 +592,7 @@ function safeCall(fn, label) {
 
 function init() {
   safeCall(renderKPIs, 'renderKPIs');
+  safeCall(renderSpotlights, 'renderSpotlights');
   safeCall(renderOverviewCharts, 'renderOverviewCharts');
   safeCall(populateSMEFilters, 'populateSMEFilters');
   safeCall(applySMEFilters, 'applySMEFilters');
